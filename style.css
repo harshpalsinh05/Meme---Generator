@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(to bottom left, rgb(255, 173, 248), rgb(249, 255, 187));
+}
+
+.meme-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-style: italic;
+    /* font-size: 1.1rem; */
+}
+
+.meme-container {
+    min-height: 780px;
+    height: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 0px solid gray;
+    /* box-shadow: rgba(249, 111, 132, 0.5) 0px 54px 55px, rgba(10, 184, 79, 0.5) 0px -12px 30px, rgba(65, 160, 33, 0.5) 0px 4px 6px; */
+    border-radius: none;
+
+}
+
+.meme-image {
+    border-radius: 2%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 22px;
+}
+
+.meme-button {
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin-top: 12px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.meme-author {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.meme-button:active {
+    background-color: lightcoral;
+}
+
+@media only screen and (max-width: 420px) {
+    .meme-title {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+
+    .meme-container {
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 820px;
+        height: 100%;
+    }
+
+    .meme-image {
+        border-radius: 2%;
+        width: 100%;
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+
+    .meme-button {
+        border: 0;
+        font: inherit;
+        background-color: lightsalmon;
+        border-radius: 20px;
+        font-size: 1.2rem;
+        margin-top: 22px;
+        padding: 8px;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .meme-author {
+        font-family: sans-serif;
+        font-size: 1.2rem;
+    }
+}
